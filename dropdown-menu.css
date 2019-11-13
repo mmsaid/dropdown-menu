@@ -15,33 +15,27 @@ body { /*font-weight font-size/line-height font-family*/
 /* Nav Bar */
 #navbar-wrap {
   background: #333;
-  /* z-index: 1; */
 }
 
-/* to wrap the menue bar in middle of the page */
 #navbar-wrap .content-wrap {
   width: 80%;
   margin: auto;
 }
 
-/* To targer the ul container to dispaly its li as flex items. */
 #navbar-wrap nav ul {
   display: flex;
   justify-content: center;
-  z-index: 2; /*to show the dropdown menu always on top*/
+  z-index: 2; 
 }
 
-/* we have to position all li as relative for its nasted ul*/
 #navbar-wrap nav ul li {
   position: relative;
 }
 
-/* to hide the nasted ul */
 #navbar-wrap nav ul li ul {
   display: none;
 }
 
-/* to display the nasted ul as a block to show under each other and position them absolute for their parent li. */
 #navbar-wrap nav ul li:hover ul {
   display: block;
   position: absolute;
@@ -63,7 +57,6 @@ body { /*font-weight font-size/line-height font-family*/
   background: none;
 }
 
-/* to color the nasted ul */
 #navbar-wrap nav ul li:hover ul a {
   color: red;
 }
